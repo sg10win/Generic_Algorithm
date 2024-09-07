@@ -15,7 +15,7 @@ def fitness(x, y, z):
         return abs(1 / ans)
 
 
-    # Randomly combine elements from two parents to form a new solution
+# Randomly combine elements from two parents to form a new solution
 def crossover(parent1, parent2):
     child_x = random.choice([parent1[0], parent2[0]])
     child_y = random.choice([parent1[1], parent2[1]])
@@ -28,7 +28,6 @@ if __name__ == '__main__':
     population_size = 1000
     max_generations = 10000
     solution_fitness_break = 99999
-
 
     solutions = []
     for s in range(population_size):
